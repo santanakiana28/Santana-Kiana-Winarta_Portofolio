@@ -151,15 +151,16 @@
   .eyebrow-line{
     display:flex; align-items:center; gap:10px;
     font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--text-faint);
-    margin-bottom:22px; letter-spacing:1em;
+    margin-bottom:22px; letter-spacing:0.15em; /* Diubah dari 1em menjadi 0.15em agar rapi & proporsional */
   }
+  
   .eyebrow-line .bar{width:26px; height:1px; background:var(--cyan-dim);}
 
-  h1.hero-title{
-    font-size:clamp(1.5rem, 2vw, 2rem);
-    line-height:1.06;
+ h1.hero-title{
+    font-size:clamp(1.5rem, 2.5vw, 2.2rem);
+    line-height:1.2;
     margin:0 0 20px;
-    font: weight 500px;;
+    font-weight:600; /* Perbaikan dari font: weight 500px;; */
     color:#ffffff;
   }
   h1.hero-title .accent{color:var(--cyan);}
