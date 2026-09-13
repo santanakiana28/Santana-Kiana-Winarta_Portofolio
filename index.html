@@ -39,7 +39,6 @@
     color:var(--text);
     font-family:'Space Grotesk', sans-serif;
     line-height:1.55;
-    text-align: justify;
     background-image:
       radial-gradient(circle at 15% 0%, rgba(53,224,224,0.07), transparent 40%),
       radial-gradient(circle at 85% 15%, rgba(61,220,151,0.05), transparent 35%);
@@ -95,14 +94,13 @@
     100%{box-shadow:0 0 0 0 rgba(61,220,151,0);}
   }
   
-  /* Style menu navigasi berbentuk button box (Scrollable di HP) */
   nav.links{
     display:flex; gap:8px; align-items:center;
     overflow-x:auto; width:100%; padding-bottom:4px;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Sembunyikan scrollbar di Firefox */
+    scrollbar-width: none;
   }
-  nav.links::-webkit-scrollbar { display: none; } /* Sembunyikan scrollbar di Chrome/Safari */
+  nav.links::-webkit-scrollbar { display: none; }
 
   nav.links a{
     font-family:'IBM Plex Mono', monospace; font-size:11.5px;
@@ -126,7 +124,6 @@
   }
   .nav-cta:hover{background:rgba(53,224,224,0.2); border-color:var(--cyan);}
 
-  /* Tampilan Desktop (Layar Lebar) */
   @media (min-width: 901px){
     .nav-inner{
       flex-direction:row; align-items:center; justify-content:space-between; padding:16px 28px;
@@ -236,7 +233,7 @@
   /* ---------- About ---------- */
   .about-grid{display:grid; grid-template-columns:1.3fr 1fr; gap:50px;}
   @media (max-width:800px){.about-grid{grid-template-columns:1fr;}}
-  .about-grid p{color:var(--text-dim); font-size:15.5px; margin:0 0 16px; text-align: justify;}
+  .about-grid p{color:var(--text-dim); font-size:15.5px; margin:0 0 16px;}
   .about-grid strong{color:var(--text);}
   .info-list{list-style:none; padding:0; margin:0; border:1px solid var(--line-soft); border-radius:var(--radius);}
   .info-list li{
@@ -346,6 +343,16 @@
   .foot-note{
     margin-top:40px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
     font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--text-faint);
+  }
+
+  /* ---------- ATURAN OPSI 3: RATA KANAN-KIRI KHUSUS TEKS DESKRIPSI ---------- */
+  .hero-desc,
+  .about-grid p,
+  .case-body p,
+  .edu-card p,
+  .t-item ul,
+  .comp-card ul {
+    text-align: justify;
   }
 </style>
 </head>
