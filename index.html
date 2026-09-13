@@ -155,13 +155,22 @@
   }
   .eyebrow-line .bar{width:26px; height:1px; background:var(--cyan-dim);}
 
-  h1.hero-title{
-    font-size:clamp(2.1rem, 5vw, 3.6rem);
-    line-height:1.06;
-    margin:0 0 20px;
-    font-weight:700;
-    color:#ffffff;
-    text-align: justify;
+h1.hero-title {
+    font-size: clamp(2.1rem, 5vw, 3.6rem);
+    line-height: 1.08;
+    margin: 0 0 20px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: left;
+
+    /* Membuat pembagian baris lebih natural */
+    text-wrap: balance;
+
+    /* Sedikit merapikan jarak huruf */
+    letter-spacing: -0.02em;
+
+    /* Batasi lebar agar heading tidak terlalu melebar */
+    max-width: 900px;
   }
   h1.hero-title .accent{color:var(--cyan);}
 
